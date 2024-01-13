@@ -1,7 +1,5 @@
 import java.util.Scanner;
 import java.util.Random;
-import java.util.random.*;
-import java.util.Random;
 
 public class SimulateurCourse {
 
@@ -16,7 +14,7 @@ public class SimulateurCourse {
 		//exit of loop
 
 		Scanner scan = new Scanner(System.in);
-		Random random = new Random();
+		Random rand = new Random();
 		
 		boolean continuer = true;
 		
@@ -38,7 +36,7 @@ public class SimulateurCourse {
 				continue;
 		
 		}
-			simulerArrivee(typeCourse,  nombreDeChevaux, random);
+			simulerArrivee(typeCourse,  nombreDeChevaux, rand);
 			System.out.println("Veeux tu simuler une autre course ? (oui/non) : ");
 			String reponse = scan.next().toLowerCase();
             continuer = reponse.equals("oui");
